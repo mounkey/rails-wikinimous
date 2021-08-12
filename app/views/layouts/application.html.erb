@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class = "row center" >
+      <%= link_to  image_tag("logo_index.png", width:"100px"), articles_path,{class:"img-fluid img_center"} %>
+      
+      <!--<img src= "https://www.mounkey.cl/img/mat/logo_index.png" class= "img-fluid img_center" width = "100px" height="150px">-->
+    </div>  
+    <div class = "container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>

@@ -1,0 +1,6 @@
+<h1>All Articles</h1>    
+<% @articles.each do |a|%>
+  <ul >
+    <li class= "card"> <%= link_to a.title, article_path(a)%> <%= "#{a.content}" %> <%= link_to  "Editar", edit_article_path(a) %> <%= link_to "Eliminar", article_path(a), method: :delete %> </li>  
+  </ul>
+<% end %>
